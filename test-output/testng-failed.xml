@@ -10,21 +10,9 @@
           <include name="runScenario" invocation-numbers="0 1"/>
           <include name="tearDownClass"/>
           <include name="setUpClass"/>
+          <include name="setUpMethod"/>
         </methods>
       </class> <!-- testrunners.MyTestRunner -->
     </classes>
   </test> <!-- Akki Huawei(failed) -->
-  <test thread-count="5" name="Sonim XP8800(failed)" parallel="tests">
-    <parameter name="port" value="4726"/>
-    <parameter name="deviceID" value="90329051"/>
-    <classes>
-      <class name="testrunners.MyTestRunner">
-        <methods>
-          <include name="runScenario" invocation-numbers="0 1"/>
-          <include name="tearDownClass"/>
-          <include name="setUpClass"/>
-        </methods>
-      </class> <!-- testrunners.MyTestRunner -->
-    </classes>
-  </test> <!-- Sonim XP8800(failed) -->
 </suite> <!-- Failed suite [Suite] -->

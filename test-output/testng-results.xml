@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="4" ignored="0" total="4" passed="0">
+<testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="2730" started-at="2020-12-29T13:07:05Z" finished-at="2020-12-29T13:07:08Z">
+  <suite name="Suite" duration-ms="64302" started-at="2020-12-29T17:40:21Z" finished-at="2020-12-29T17:41:25Z">
     <groups>
       <group name="cucumber">
-        <method signature="MyTestRunner.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.MyTestRunner@6d7b4f4c]" name="runScenario" class="testrunners.MyTestRunner"/>
-        <method signature="MyTestRunner.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.MyTestRunner@5bc79255]" name="runScenario" class="testrunners.MyTestRunner"/>
+        <method signature="MyTestRunner.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.MyTestRunner@536aaa8d]" name="runScenario" class="testrunners.MyTestRunner"/>
+        <method signature="MyTestRunner.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.MyTestRunner@4d50efb8]" name="runScenario" class="testrunners.MyTestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Akki Huawei" duration-ms="2706" started-at="2020-12-29T13:07:05Z" finished-at="2020-12-29T13:07:08Z">
+    <test name="Sonim XP8800" duration-ms="62763" started-at="2020-12-29T17:40:21Z" finished-at="2020-12-29T17:41:24Z">
       <class name="testrunners.MyTestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunners.MyTestRunner@6d7b4f4c]" name="setUpClass" is-config="true" duration-ms="516" started-at="2020-12-29T13:07:05Z" finished-at="2020-12-29T13:07:06Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunners.MyTestRunner@4d50efb8]" name="setUpClass" is-config="true" duration-ms="535" started-at="2020-12-29T17:40:21Z" finished-at="2020-12-29T17:40:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.MyTestRunner@6d7b4f4c]" name="runScenario" duration-ms="92" started-at="2020-12-29T13:07:06Z" description="Runs Cucumber Feature" data-provider="scenarios" finished-at="2020-12-29T13:07:06Z">
+        <test-method status="PASS" signature="setUpMethod(java.lang.String, java.lang.String)[pri:0, instance:testrunners.MyTestRunner@4d50efb8]" name="setUpMethod" is-config="true" duration-ms="11386" started-at="2020-12-29T17:40:21Z" finished-at="2020-12-29T17:40:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4726]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[90329051]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.MyTestRunner@4d50efb8]" name="runScenario" duration-ms="20467" started-at="2020-12-29T17:40:33Z" description="Runs Cucumber Feature" data-provider="scenarios" finished-at="2020-12-29T17:40:53Z">
           <params>
             <param index="0">
               <value>
@@ -28,84 +44,26 @@
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.java.InvalidMethodSignatureException">
-            <message>
-              <![CDATA[A method annotated with Before, After, BeforeStep or AfterStep must have one of these signatures:
- * public void before_or_after(io.cucumber.java.Scenario scenario)
- * public void before_or_after()
-at com.qa.factory.DriverFactory.loadCapabilities(java.lang.String,java.lang.String)
-
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.InvalidMethodSignatureException: A method annotated with Before, After, BeforeStep or AfterStep must have one of these signatures:
- * public void before_or_after(io.cucumber.java.Scenario scenario)
- * public void before_or_after()
-at com.qa.factory.DriverFactory.loadCapabilities(java.lang.String,java.lang.String)
-
-
-at io.cucumber.java.InvalidMethodSignatureException$InvalidMethodSignatureExceptionBuilder.build(InvalidMethodSignatureException.java:52)
-at io.cucumber.java.JavaHookDefinition.createInvalidSignatureException(JavaHookDefinition.java:47)
-at io.cucumber.java.JavaHookDefinition.requireValidMethod(JavaHookDefinition.java:26)
-at io.cucumber.java.JavaHookDefinition.<init>(JavaHookDefinition.java:18)
-at io.cucumber.java.GlueAdaptor.addDefinition(GlueAdaptor.java:27)
-at io.cucumber.java.JavaBackend.lambda$loadGlue$1(JavaBackend.java:42)
-at io.cucumber.java.MethodScanner.scan(MethodScanner.java:49)
-at io.cucumber.java.MethodScanner.scan(MethodScanner.java:40)
-at io.cucumber.java.MethodScanner.scan(MethodScanner.java:25)
-at io.cucumber.java.JavaBackend.lambda$loadGlue$2(JavaBackend.java:40)
-at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
-at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
-at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
-at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
-at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
-at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-at java.util.stream.ReferencePipeline.forEach(Unknown Source)
-at io.cucumber.java.JavaBackend.loadGlue(JavaBackend.java:40)
-at io.cucumber.core.runner.Runner.<init>(Runner.java:52)
-at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.createRunner(ThreadLocalRunnerSupplier.java:51)
-at java.lang.ThreadLocal$SuppliedThreadLocal.initialValue(Unknown Source)
-at java.lang.ThreadLocal.setInitialValue(Unknown Source)
-at java.lang.ThreadLocal.get(Unknown Source)
-at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.get(ThreadLocalRunnerSupplier.java:43)
-at io.cucumber.core.runtime.CucumberExecutionContext.getRunner(CucumberExecutionContext.java:128)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:115)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
-at testrunners.MyTestRunner.runScenario(MyTestRunner.java:30)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.InvalidMethodSignatureException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.MyTestRunner@6d7b4f4c]" name="runScenario" duration-ms="11" started-at="2020-12-29T13:07:06Z" description="Runs Cucumber Feature" data-provider="scenarios" finished-at="2020-12-29T13:07:06Z">
+        <test-method status="PASS" signature="setUpMethod(java.lang.String, java.lang.String)[pri:0, instance:testrunners.MyTestRunner@4d50efb8]" name="setUpMethod" is-config="true" duration-ms="10717" started-at="2020-12-29T17:40:53Z" finished-at="2020-12-29T17:41:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4726]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[90329051]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.MyTestRunner@4d50efb8]" name="runScenario" duration-ms="17921" started-at="2020-12-29T17:41:04Z" description="Runs Cucumber Feature" data-provider="scenarios" finished-at="2020-12-29T17:41:22Z">
           <params>
             <param index="0">
               <value>
@@ -118,280 +76,194 @@ at java.lang.Thread.run(Unknown Source)
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.java.InvalidMethodSignatureException">
-            <message>
-              <![CDATA[A method annotated with Before, After, BeforeStep or AfterStep must have one of these signatures:
- * public void before_or_after(io.cucumber.java.Scenario scenario)
- * public void before_or_after()
-at com.qa.factory.DriverFactory.loadCapabilities(java.lang.String,java.lang.String)
-
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.InvalidMethodSignatureException: A method annotated with Before, After, BeforeStep or AfterStep must have one of these signatures:
- * public void before_or_after(io.cucumber.java.Scenario scenario)
- * public void before_or_after()
-at com.qa.factory.DriverFactory.loadCapabilities(java.lang.String,java.lang.String)
-
-
-at io.cucumber.java.InvalidMethodSignatureException$InvalidMethodSignatureExceptionBuilder.build(InvalidMethodSignatureException.java:52)
-at io.cucumber.java.JavaHookDefinition.createInvalidSignatureException(JavaHookDefinition.java:47)
-at io.cucumber.java.JavaHookDefinition.requireValidMethod(JavaHookDefinition.java:26)
-at io.cucumber.java.JavaHookDefinition.<init>(JavaHookDefinition.java:18)
-at io.cucumber.java.GlueAdaptor.addDefinition(GlueAdaptor.java:27)
-at io.cucumber.java.JavaBackend.lambda$loadGlue$1(JavaBackend.java:42)
-at io.cucumber.java.MethodScanner.scan(MethodScanner.java:49)
-at io.cucumber.java.MethodScanner.scan(MethodScanner.java:40)
-at io.cucumber.java.MethodScanner.scan(MethodScanner.java:25)
-at io.cucumber.java.JavaBackend.lambda$loadGlue$2(JavaBackend.java:40)
-at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
-at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
-at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
-at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
-at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
-at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-at java.util.stream.ReferencePipeline.forEach(Unknown Source)
-at io.cucumber.java.JavaBackend.loadGlue(JavaBackend.java:40)
-at io.cucumber.core.runner.Runner.<init>(Runner.java:52)
-at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.createRunner(ThreadLocalRunnerSupplier.java:51)
-at java.lang.ThreadLocal$SuppliedThreadLocal.initialValue(Unknown Source)
-at java.lang.ThreadLocal.setInitialValue(Unknown Source)
-at java.lang.ThreadLocal.get(Unknown Source)
-at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.get(ThreadLocalRunnerSupplier.java:43)
-at io.cucumber.core.runtime.CucumberExecutionContext.getRunner(CucumberExecutionContext.java:128)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:115)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
-at testrunners.MyTestRunner.runScenario(MyTestRunner.java:30)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.InvalidMethodSignatureException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunners.MyTestRunner@6d7b4f4c]" name="tearDownClass" is-config="true" duration-ms="2059" started-at="2020-12-29T13:07:06Z" finished-at="2020-12-29T13:07:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- testrunners.MyTestRunner -->
-    </test> <!-- Akki Huawei -->
-    <test name="Sonim XP8800" duration-ms="2730" started-at="2020-12-29T13:07:05Z" finished-at="2020-12-29T13:07:08Z">
-      <class name="testrunners.MyTestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunners.MyTestRunner@5bc79255]" name="setUpClass" is-config="true" duration-ms="515" started-at="2020-12-29T13:07:05Z" finished-at="2020-12-29T13:07:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.MyTestRunner@5bc79255]" name="runScenario" duration-ms="93" started-at="2020-12-29T13:07:06Z" description="Runs Cucumber Feature" data-provider="scenarios" finished-at="2020-12-29T13:07:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify different tabs are present in front Home Screen"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Verify HomeScreen Tab]"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.InvalidMethodSignatureException">
-            <message>
-              <![CDATA[A method annotated with Before, After, BeforeStep or AfterStep must have one of these signatures:
- * public void before_or_after(io.cucumber.java.Scenario scenario)
- * public void before_or_after()
-at com.qa.factory.DriverFactory.loadCapabilities(java.lang.String,java.lang.String)
-
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.InvalidMethodSignatureException: A method annotated with Before, After, BeforeStep or AfterStep must have one of these signatures:
- * public void before_or_after(io.cucumber.java.Scenario scenario)
- * public void before_or_after()
-at com.qa.factory.DriverFactory.loadCapabilities(java.lang.String,java.lang.String)
-
-
-at io.cucumber.java.InvalidMethodSignatureException$InvalidMethodSignatureExceptionBuilder.build(InvalidMethodSignatureException.java:52)
-at io.cucumber.java.JavaHookDefinition.createInvalidSignatureException(JavaHookDefinition.java:47)
-at io.cucumber.java.JavaHookDefinition.requireValidMethod(JavaHookDefinition.java:26)
-at io.cucumber.java.JavaHookDefinition.<init>(JavaHookDefinition.java:18)
-at io.cucumber.java.GlueAdaptor.addDefinition(GlueAdaptor.java:27)
-at io.cucumber.java.JavaBackend.lambda$loadGlue$1(JavaBackend.java:42)
-at io.cucumber.java.MethodScanner.scan(MethodScanner.java:49)
-at io.cucumber.java.MethodScanner.scan(MethodScanner.java:40)
-at io.cucumber.java.MethodScanner.scan(MethodScanner.java:25)
-at io.cucumber.java.JavaBackend.lambda$loadGlue$2(JavaBackend.java:40)
-at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
-at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
-at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
-at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
-at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
-at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-at java.util.stream.ReferencePipeline.forEach(Unknown Source)
-at io.cucumber.java.JavaBackend.loadGlue(JavaBackend.java:40)
-at io.cucumber.core.runner.Runner.<init>(Runner.java:52)
-at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.createRunner(ThreadLocalRunnerSupplier.java:51)
-at java.lang.ThreadLocal$SuppliedThreadLocal.initialValue(Unknown Source)
-at java.lang.ThreadLocal.setInitialValue(Unknown Source)
-at java.lang.ThreadLocal.get(Unknown Source)
-at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.get(ThreadLocalRunnerSupplier.java:43)
-at io.cucumber.core.runtime.CucumberExecutionContext.getRunner(CucumberExecutionContext.java:128)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:115)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
-at testrunners.MyTestRunner.runScenario(MyTestRunner.java:30)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.InvalidMethodSignatureException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.MyTestRunner@5bc79255]" name="runScenario" duration-ms="12" started-at="2020-12-29T13:07:06Z" description="Runs Cucumber Feature" data-provider="scenarios" finished-at="2020-12-29T13:07:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user is on Home Screen"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Login to Fittr feature]"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.InvalidMethodSignatureException">
-            <message>
-              <![CDATA[A method annotated with Before, After, BeforeStep or AfterStep must have one of these signatures:
- * public void before_or_after(io.cucumber.java.Scenario scenario)
- * public void before_or_after()
-at com.qa.factory.DriverFactory.loadCapabilities(java.lang.String,java.lang.String)
-
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.InvalidMethodSignatureException: A method annotated with Before, After, BeforeStep or AfterStep must have one of these signatures:
- * public void before_or_after(io.cucumber.java.Scenario scenario)
- * public void before_or_after()
-at com.qa.factory.DriverFactory.loadCapabilities(java.lang.String,java.lang.String)
-
-
-at io.cucumber.java.InvalidMethodSignatureException$InvalidMethodSignatureExceptionBuilder.build(InvalidMethodSignatureException.java:52)
-at io.cucumber.java.JavaHookDefinition.createInvalidSignatureException(JavaHookDefinition.java:47)
-at io.cucumber.java.JavaHookDefinition.requireValidMethod(JavaHookDefinition.java:26)
-at io.cucumber.java.JavaHookDefinition.<init>(JavaHookDefinition.java:18)
-at io.cucumber.java.GlueAdaptor.addDefinition(GlueAdaptor.java:27)
-at io.cucumber.java.JavaBackend.lambda$loadGlue$1(JavaBackend.java:42)
-at io.cucumber.java.MethodScanner.scan(MethodScanner.java:49)
-at io.cucumber.java.MethodScanner.scan(MethodScanner.java:40)
-at io.cucumber.java.MethodScanner.scan(MethodScanner.java:25)
-at io.cucumber.java.JavaBackend.lambda$loadGlue$2(JavaBackend.java:40)
-at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
-at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
-at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
-at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
-at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
-at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-at java.util.stream.ReferencePipeline.forEach(Unknown Source)
-at io.cucumber.java.JavaBackend.loadGlue(JavaBackend.java:40)
-at io.cucumber.core.runner.Runner.<init>(Runner.java:52)
-at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.createRunner(ThreadLocalRunnerSupplier.java:51)
-at java.lang.ThreadLocal$SuppliedThreadLocal.initialValue(Unknown Source)
-at java.lang.ThreadLocal.setInitialValue(Unknown Source)
-at java.lang.ThreadLocal.get(Unknown Source)
-at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.get(ThreadLocalRunnerSupplier.java:43)
-at io.cucumber.core.runtime.CucumberExecutionContext.getRunner(CucumberExecutionContext.java:128)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:115)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
-at testrunners.MyTestRunner.runScenario(MyTestRunner.java:30)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.InvalidMethodSignatureException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunners.MyTestRunner@5bc79255]" name="tearDownClass" is-config="true" duration-ms="2086" started-at="2020-12-29T13:07:06Z" finished-at="2020-12-29T13:07:08Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunners.MyTestRunner@4d50efb8]" name="tearDownClass" is-config="true" duration-ms="1711" started-at="2020-12-29T17:41:22Z" finished-at="2020-12-29T17:41:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- testrunners.MyTestRunner -->
     </test> <!-- Sonim XP8800 -->
+    <test name="Akki Huawei" duration-ms="64302" started-at="2020-12-29T17:40:21Z" finished-at="2020-12-29T17:41:25Z">
+      <class name="testrunners.MyTestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunners.MyTestRunner@536aaa8d]" name="setUpClass" is-config="true" duration-ms="535" started-at="2020-12-29T17:40:21Z" finished-at="2020-12-29T17:40:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setUpMethod(java.lang.String, java.lang.String)[pri:0, instance:testrunners.MyTestRunner@536aaa8d]" name="setUpMethod" is-config="true" duration-ms="10140" started-at="2020-12-29T17:40:21Z" finished-at="2020-12-29T17:40:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[86S7N18530001837]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.MyTestRunner@536aaa8d]" name="runScenario" duration-ms="21376" started-at="2020-12-29T17:40:31Z" description="Runs Cucumber Feature" data-provider="scenarios" finished-at="2020-12-29T17:40:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify different tabs are present in front Home Screen"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify HomeScreen Tab]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-7G8T14EK', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: .activity.SplashActivity, appPackage: com.squats.fittr, chromedriverPort: 5645, databaseEnabled: false, desired: {appActivity: .activity.SplashActivity, appPackage: com.squats.fittr, chromedriverPort: 5645, deviceName: 90329051, platformName: android, platformVersion: 10, server:CONFIG_UUID: 6c7e712d-911b-4513-9c75-4e3..., udid: 90329051}, deviceApiLevel: 29, deviceManufacturer: Sonimtech, deviceModel: XP8800, deviceName: 90329051, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: 90329051, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 10, server:CONFIG_UUID: 6c7e712d-911b-4513-9c75-4e3..., statBarHeight: 72, takesScreenshot: true, udid: 90329051, viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c60f70c4-6cee-442b-8e49-d489f65dba7d
+*** Element info: {Using=id, value=com.squats.fittr:id/material_target_prompt_view}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-7G8T14EK', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: .activity.SplashActivity, appPackage: com.squats.fittr, chromedriverPort: 5645, databaseEnabled: false, desired: {appActivity: .activity.SplashActivity, appPackage: com.squats.fittr, chromedriverPort: 5645, deviceName: 90329051, platformName: android, platformVersion: 10, server:CONFIG_UUID: 6c7e712d-911b-4513-9c75-4e3..., udid: 90329051}, deviceApiLevel: 29, deviceManufacturer: Sonimtech, deviceModel: XP8800, deviceName: 90329051, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: 90329051, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 10, server:CONFIG_UUID: 6c7e712d-911b-4513-9c75-4e3..., statBarHeight: 72, takesScreenshot: true, udid: 90329051, viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c60f70c4-6cee-442b-8e49-d489f65dba7d
+*** Element info: {Using=id, value=com.squats.fittr:id/material_target_prompt_view}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at com.screens.HomeScreen.homeScreen(HomeScreen.java:33)
+at stepdefinitions.LoginScreenSteps.user_is_on_Home_screen(LoginScreenSteps.java:49)
+at ✽.user is on Home Screen "Home"(file:///C:/Users/ApuAkki/eclipse-workspace/cucumberPracticeAppium/src/test/resources/com/features/HomeScreen.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="setUpMethod(java.lang.String, java.lang.String)[pri:0, instance:testrunners.MyTestRunner@536aaa8d]" name="setUpMethod" is-config="true" duration-ms="10070" started-at="2020-12-29T17:40:53Z" finished-at="2020-12-29T17:41:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[86S7N18530001837]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.MyTestRunner@536aaa8d]" name="runScenario" duration-ms="21403" started-at="2020-12-29T17:41:03Z" description="Runs Cucumber Feature" data-provider="scenarios" finished-at="2020-12-29T17:41:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user is on Home Screen"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login to Fittr feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-7G8T14EK', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: .activity.SplashActivity, appPackage: com.squats.fittr, chromedriverPort: 5645, databaseEnabled: false, desired: {appActivity: .activity.SplashActivity, appPackage: com.squats.fittr, chromedriverPort: 5645, deviceName: 86S7N18530001837, platformName: android, platformVersion: 9, server:CONFIG_UUID: 6c7e712d-911b-4513-9c75-4e3..., udid: 90329051}, deviceApiLevel: 29, deviceManufacturer: Sonimtech, deviceModel: XP8800, deviceName: 90329051, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: 90329051, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 10, server:CONFIG_UUID: 6c7e712d-911b-4513-9c75-4e3..., statBarHeight: 72, takesScreenshot: true, udid: 90329051, viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 424a252b-0992-43c0-afda-de90a03386e5
+*** Element info: {Using=id, value=com.squats.fittr:id/material_target_prompt_view}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-7G8T14EK', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: .activity.SplashActivity, appPackage: com.squats.fittr, chromedriverPort: 5645, databaseEnabled: false, desired: {appActivity: .activity.SplashActivity, appPackage: com.squats.fittr, chromedriverPort: 5645, deviceName: 86S7N18530001837, platformName: android, platformVersion: 9, server:CONFIG_UUID: 6c7e712d-911b-4513-9c75-4e3..., udid: 90329051}, deviceApiLevel: 29, deviceManufacturer: Sonimtech, deviceModel: XP8800, deviceName: 90329051, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: 90329051, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 10, server:CONFIG_UUID: 6c7e712d-911b-4513-9c75-4e3..., statBarHeight: 72, takesScreenshot: true, udid: 90329051, viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 424a252b-0992-43c0-afda-de90a03386e5
+*** Element info: {Using=id, value=com.squats.fittr:id/material_target_prompt_view}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at com.screens.HomeScreen.homeScreen(HomeScreen.java:33)
+at stepdefinitions.LoginScreenSteps.user_is_on_Home_screen(LoginScreenSteps.java:49)
+at ✽.user is on Home Screen "Home"(file:///C:/Users/ApuAkki/eclipse-workspace/cucumberPracticeAppium/src/test/resources/com/features/LoginScreen.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunners.MyTestRunner@536aaa8d]" name="tearDownClass" is-config="true" duration-ms="751" started-at="2020-12-29T17:41:24Z" finished-at="2020-12-29T17:41:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testrunners.MyTestRunner -->
+    </test> <!-- Akki Huawei -->
   </suite> <!-- Suite -->
 </testng-results>

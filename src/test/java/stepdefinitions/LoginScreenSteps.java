@@ -4,22 +4,24 @@ package stepdefinitions;
 
 import org.testng.Assert;
 
-import com.qa.factory.DriverFactory;
+
 import com.screens.GetStarted;
 import com.screens.HomeScreen;
 import com.screens.LoginScreen;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.cucumber.java.en.*;
+import testrunners.MyTestRunner;
 
 public class LoginScreenSteps {
 	
-	GetStarted gs = new GetStarted(DriverFactory.getDriver());
+	GetStarted gs = new GetStarted(MyTestRunner.getDriver());
 	LoginScreen loginScreen;
 	HomeScreen homeScreen;
 	
 	@Given("user is on {string} Get Started Screen")
 	public void user_is_on_Get_Started_Screen(String getStartedText) {
+		System.out.println("in bg******");
 		String actualText = gs.weAreFamilyScreen();
 		System.out.println("Text 3 : loginScreenSteps :" +actualText);
 	    Assert.assertEquals(getStartedText,actualText);

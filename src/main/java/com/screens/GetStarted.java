@@ -13,12 +13,14 @@ public class GetStarted {
 
 	private By weAreFamilyID=By.id(Constants.WEAREFAMILY_ID);
 	private By getstartedID=By.id(Constants.GETSTARTED_ID);
+	//testrunners.ElementUtil ElementUtil=new testrunners.ElementUtil();
 	
 	public GetStarted(AndroidDriver driver) {
 		this.driver=driver;
 	}
 	
 	public String weAreFamilyScreen() {
+		System.out.println("in we are family***********");
 		ElementUtil.waitForElement(weAreFamilyID,"ID");
 		System.out.println("Text 1 GetStarted : " +driver.findElement(weAreFamilyID).getText());
 		return driver.findElement(weAreFamilyID).getText();
