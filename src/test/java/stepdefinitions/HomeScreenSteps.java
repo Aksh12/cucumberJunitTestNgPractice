@@ -2,7 +2,7 @@ package stepdefinitions;
 
 import java.util.List;
 
-import org.junit.Assert;
+import org.testng.Assert;
 
 import com.qa.factory.DriverFactory;
 import com.screens.HomeScreen;

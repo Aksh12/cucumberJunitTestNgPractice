@@ -7,7 +7,7 @@ public class Rough {
 	public static void main(String[] args) {
 		
 		DriverFactory df = new DriverFactory();
-		df.init_driver("Android");
+		//df.init_driver("Android");
 
 	}
 

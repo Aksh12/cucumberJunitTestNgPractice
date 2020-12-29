@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="Akki Huawei(failed)" parallel="tests">
+    <parameter name="port" value="4725"/>
+    <parameter name="deviceID" value="86S7N18530001837"/>
+    <classes>
+      <class name="testrunners.MyTestRunner">
+        <methods>
+          <include name="runScenario" invocation-numbers="0 1"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- testrunners.MyTestRunner -->
+    </classes>
+  </test> <!-- Akki Huawei(failed) -->
+  <test thread-count="5" name="Sonim XP8800(failed)" parallel="tests">
+    <parameter name="port" value="4726"/>
+    <parameter name="deviceID" value="90329051"/>
+    <classes>
+      <class name="testrunners.MyTestRunner">
+        <methods>
+          <include name="runScenario" invocation-numbers="0 1"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- testrunners.MyTestRunner -->
+    </classes>
+  </test> <!-- Sonim XP8800(failed) -->
+</suite> <!-- Failed suite [Suite] -->

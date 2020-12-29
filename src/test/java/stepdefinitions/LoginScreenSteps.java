@@ -1,6 +1,8 @@
 package stepdefinitions;
 
-import org.junit.Assert;
+
+
+import org.testng.Assert;
 
 import com.qa.factory.DriverFactory;
 import com.screens.GetStarted;

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="4" ignored="0" total="4" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="2730" started-at="2020-12-29T13:07:05Z" finished-at="2020-12-29T13:07:08Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="MyTestRunner.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.MyTestRunner@6d7b4f4c]" name="runScenario" class="testrunners.MyTestRunner"/>
+        <method signature="MyTestRunner.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.MyTestRunner@5bc79255]" name="runScenario" class="testrunners.MyTestRunner"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Akki Huawei" duration-ms="2706" started-at="2020-12-29T13:07:05Z" finished-at="2020-12-29T13:07:08Z">
+      <class name="testrunners.MyTestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunners.MyTestRunner@6d7b4f4c]" name="setUpClass" is-config="true" duration-ms="516" started-at="2020-12-29T13:07:05Z" finished-at="2020-12-29T13:07:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.MyTestRunner@6d7b4f4c]" name="runScenario" duration-ms="92" started-at="2020-12-29T13:07:06Z" description="Runs Cucumber Feature" data-provider="scenarios" finished-at="2020-12-29T13:07:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify different tabs are present in front Home Screen"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify HomeScreen Tab]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.java.InvalidMethodSignatureException">
+            <message>
+              <![CDATA[A method annotated with Before, After, BeforeStep or AfterStep must have one of these signatures:
+ * public void before_or_after(io.cucumber.java.Scenario scenario)
+ * public void before_or_after()
+at com.qa.factory.DriverFactory.loadCapabilities(java.lang.String,java.lang.String)
+
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.java.InvalidMethodSignatureException: A method annotated with Before, After, BeforeStep or AfterStep must have one of these signatures:
+ * public void before_or_after(io.cucumber.java.Scenario scenario)
+ * public void before_or_after()
+at com.qa.factory.DriverFactory.loadCapabilities(java.lang.String,java.lang.String)
+
+
+at io.cucumber.java.InvalidMethodSignatureException$InvalidMethodSignatureExceptionBuilder.build(InvalidMethodSignatureException.java:52)
+at io.cucumber.java.JavaHookDefinition.createInvalidSignatureException(JavaHookDefinition.java:47)
+at io.cucumber.java.JavaHookDefinition.requireValidMethod(JavaHookDefinition.java:26)
+at io.cucumber.java.JavaHookDefinition.<init>(JavaHookDefinition.java:18)
+at io.cucumber.java.GlueAdaptor.addDefinition(GlueAdaptor.java:27)
+at io.cucumber.java.JavaBackend.lambda$loadGlue$1(JavaBackend.java:42)
+at io.cucumber.java.MethodScanner.scan(MethodScanner.java:49)
+at io.cucumber.java.MethodScanner.scan(MethodScanner.java:40)
+at io.cucumber.java.MethodScanner.scan(MethodScanner.java:25)
+at io.cucumber.java.JavaBackend.lambda$loadGlue$2(JavaBackend.java:40)
+at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+at io.cucumber.java.JavaBackend.loadGlue(JavaBackend.java:40)
+at io.cucumber.core.runner.Runner.<init>(Runner.java:52)
+at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.createRunner(ThreadLocalRunnerSupplier.java:51)
+at java.lang.ThreadLocal$SuppliedThreadLocal.initialValue(Unknown Source)
+at java.lang.ThreadLocal.setInitialValue(Unknown Source)
+at java.lang.ThreadLocal.get(Unknown Source)
+at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.get(ThreadLocalRunnerSupplier.java:43)
+at io.cucumber.core.runtime.CucumberExecutionContext.getRunner(CucumberExecutionContext.java:128)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:115)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
+at testrunners.MyTestRunner.runScenario(MyTestRunner.java:30)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.java.InvalidMethodSignatureException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.MyTestRunner@6d7b4f4c]" name="runScenario" duration-ms="11" started-at="2020-12-29T13:07:06Z" description="Runs Cucumber Feature" data-provider="scenarios" finished-at="2020-12-29T13:07:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user is on Home Screen"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login to Fittr feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.java.InvalidMethodSignatureException">
+            <message>
+              <![CDATA[A method annotated with Before, After, BeforeStep or AfterStep must have one of these signatures:
+ * public void before_or_after(io.cucumber.java.Scenario scenario)
+ * public void before_or_after()
+at com.qa.factory.DriverFactory.loadCapabilities(java.lang.String,java.lang.String)
+
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.java.InvalidMethodSignatureException: A method annotated with Before, After, BeforeStep or AfterStep must have one of these signatures:
+ * public void before_or_after(io.cucumber.java.Scenario scenario)
+ * public void before_or_after()
+at com.qa.factory.DriverFactory.loadCapabilities(java.lang.String,java.lang.String)
+
+
+at io.cucumber.java.InvalidMethodSignatureException$InvalidMethodSignatureExceptionBuilder.build(InvalidMethodSignatureException.java:52)
+at io.cucumber.java.JavaHookDefinition.createInvalidSignatureException(JavaHookDefinition.java:47)
+at io.cucumber.java.JavaHookDefinition.requireValidMethod(JavaHookDefinition.java:26)
+at io.cucumber.java.JavaHookDefinition.<init>(JavaHookDefinition.java:18)
+at io.cucumber.java.GlueAdaptor.addDefinition(GlueAdaptor.java:27)
+at io.cucumber.java.JavaBackend.lambda$loadGlue$1(JavaBackend.java:42)
+at io.cucumber.java.MethodScanner.scan(MethodScanner.java:49)
+at io.cucumber.java.MethodScanner.scan(MethodScanner.java:40)
+at io.cucumber.java.MethodScanner.scan(MethodScanner.java:25)
+at io.cucumber.java.JavaBackend.lambda$loadGlue$2(JavaBackend.java:40)
+at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+at io.cucumber.java.JavaBackend.loadGlue(JavaBackend.java:40)
+at io.cucumber.core.runner.Runner.<init>(Runner.java:52)
+at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.createRunner(ThreadLocalRunnerSupplier.java:51)
+at java.lang.ThreadLocal$SuppliedThreadLocal.initialValue(Unknown Source)
+at java.lang.ThreadLocal.setInitialValue(Unknown Source)
+at java.lang.ThreadLocal.get(Unknown Source)
+at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.get(ThreadLocalRunnerSupplier.java:43)
+at io.cucumber.core.runtime.CucumberExecutionContext.getRunner(CucumberExecutionContext.java:128)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:115)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
+at testrunners.MyTestRunner.runScenario(MyTestRunner.java:30)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.java.InvalidMethodSignatureException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunners.MyTestRunner@6d7b4f4c]" name="tearDownClass" is-config="true" duration-ms="2059" started-at="2020-12-29T13:07:06Z" finished-at="2020-12-29T13:07:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testrunners.MyTestRunner -->
+    </test> <!-- Akki Huawei -->
+    <test name="Sonim XP8800" duration-ms="2730" started-at="2020-12-29T13:07:05Z" finished-at="2020-12-29T13:07:08Z">
+      <class name="testrunners.MyTestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunners.MyTestRunner@5bc79255]" name="setUpClass" is-config="true" duration-ms="515" started-at="2020-12-29T13:07:05Z" finished-at="2020-12-29T13:07:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.MyTestRunner@5bc79255]" name="runScenario" duration-ms="93" started-at="2020-12-29T13:07:06Z" description="Runs Cucumber Feature" data-provider="scenarios" finished-at="2020-12-29T13:07:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify different tabs are present in front Home Screen"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify HomeScreen Tab]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.java.InvalidMethodSignatureException">
+            <message>
+              <![CDATA[A method annotated with Before, After, BeforeStep or AfterStep must have one of these signatures:
+ * public void before_or_after(io.cucumber.java.Scenario scenario)
+ * public void before_or_after()
+at com.qa.factory.DriverFactory.loadCapabilities(java.lang.String,java.lang.String)
+
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.java.InvalidMethodSignatureException: A method annotated with Before, After, BeforeStep or AfterStep must have one of these signatures:
+ * public void before_or_after(io.cucumber.java.Scenario scenario)
+ * public void before_or_after()
+at com.qa.factory.DriverFactory.loadCapabilities(java.lang.String,java.lang.String)
+
+
+at io.cucumber.java.InvalidMethodSignatureException$InvalidMethodSignatureExceptionBuilder.build(InvalidMethodSignatureException.java:52)
+at io.cucumber.java.JavaHookDefinition.createInvalidSignatureException(JavaHookDefinition.java:47)
+at io.cucumber.java.JavaHookDefinition.requireValidMethod(JavaHookDefinition.java:26)
+at io.cucumber.java.JavaHookDefinition.<init>(JavaHookDefinition.java:18)
+at io.cucumber.java.GlueAdaptor.addDefinition(GlueAdaptor.java:27)
+at io.cucumber.java.JavaBackend.lambda$loadGlue$1(JavaBackend.java:42)
+at io.cucumber.java.MethodScanner.scan(MethodScanner.java:49)
+at io.cucumber.java.MethodScanner.scan(MethodScanner.java:40)
+at io.cucumber.java.MethodScanner.scan(MethodScanner.java:25)
+at io.cucumber.java.JavaBackend.lambda$loadGlue$2(JavaBackend.java:40)
+at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+at io.cucumber.java.JavaBackend.loadGlue(JavaBackend.java:40)
+at io.cucumber.core.runner.Runner.<init>(Runner.java:52)
+at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.createRunner(ThreadLocalRunnerSupplier.java:51)
+at java.lang.ThreadLocal$SuppliedThreadLocal.initialValue(Unknown Source)
+at java.lang.ThreadLocal.setInitialValue(Unknown Source)
+at java.lang.ThreadLocal.get(Unknown Source)
+at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.get(ThreadLocalRunnerSupplier.java:43)
+at io.cucumber.core.runtime.CucumberExecutionContext.getRunner(CucumberExecutionContext.java:128)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:115)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
+at testrunners.MyTestRunner.runScenario(MyTestRunner.java:30)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.java.InvalidMethodSignatureException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.MyTestRunner@5bc79255]" name="runScenario" duration-ms="12" started-at="2020-12-29T13:07:06Z" description="Runs Cucumber Feature" data-provider="scenarios" finished-at="2020-12-29T13:07:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user is on Home Screen"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login to Fittr feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.java.InvalidMethodSignatureException">
+            <message>
+              <![CDATA[A method annotated with Before, After, BeforeStep or AfterStep must have one of these signatures:
+ * public void before_or_after(io.cucumber.java.Scenario scenario)
+ * public void before_or_after()
+at com.qa.factory.DriverFactory.loadCapabilities(java.lang.String,java.lang.String)
+
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.java.InvalidMethodSignatureException: A method annotated with Before, After, BeforeStep or AfterStep must have one of these signatures:
+ * public void before_or_after(io.cucumber.java.Scenario scenario)
+ * public void before_or_after()
+at com.qa.factory.DriverFactory.loadCapabilities(java.lang.String,java.lang.String)
+
+
+at io.cucumber.java.InvalidMethodSignatureException$InvalidMethodSignatureExceptionBuilder.build(InvalidMethodSignatureException.java:52)
+at io.cucumber.java.JavaHookDefinition.createInvalidSignatureException(JavaHookDefinition.java:47)
+at io.cucumber.java.JavaHookDefinition.requireValidMethod(JavaHookDefinition.java:26)
+at io.cucumber.java.JavaHookDefinition.<init>(JavaHookDefinition.java:18)
+at io.cucumber.java.GlueAdaptor.addDefinition(GlueAdaptor.java:27)
+at io.cucumber.java.JavaBackend.lambda$loadGlue$1(JavaBackend.java:42)
+at io.cucumber.java.MethodScanner.scan(MethodScanner.java:49)
+at io.cucumber.java.MethodScanner.scan(MethodScanner.java:40)
+at io.cucumber.java.MethodScanner.scan(MethodScanner.java:25)
+at io.cucumber.java.JavaBackend.lambda$loadGlue$2(JavaBackend.java:40)
+at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+at io.cucumber.java.JavaBackend.loadGlue(JavaBackend.java:40)
+at io.cucumber.core.runner.Runner.<init>(Runner.java:52)
+at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.createRunner(ThreadLocalRunnerSupplier.java:51)
+at java.lang.ThreadLocal$SuppliedThreadLocal.initialValue(Unknown Source)
+at java.lang.ThreadLocal.setInitialValue(Unknown Source)
+at java.lang.ThreadLocal.get(Unknown Source)
+at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.get(ThreadLocalRunnerSupplier.java:43)
+at io.cucumber.core.runtime.CucumberExecutionContext.getRunner(CucumberExecutionContext.java:128)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:115)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
+at testrunners.MyTestRunner.runScenario(MyTestRunner.java:30)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.java.InvalidMethodSignatureException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunners.MyTestRunner@5bc79255]" name="tearDownClass" is-config="true" duration-ms="2086" started-at="2020-12-29T13:07:06Z" finished-at="2020-12-29T13:07:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testrunners.MyTestRunner -->
+    </test> <!-- Sonim XP8800 -->
+  </suite> <!-- Suite -->
+</testng-results>

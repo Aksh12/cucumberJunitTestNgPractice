@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+
+    <test thread-count="5" name="Akki Huawei">
+  <parameter name="port" value="4725"></parameter>
+    <parameter name="deviceID" value="86S7N18530001837"></parameter>
+    <classes>
+      <class name="testrunners.MyTestRunner"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test thread-count="5" name="Sonim XP8800">
+   <parameter name="port" value="4726"></parameter>
+    <parameter name="deviceID" value="90329051"></parameter>
+    <classes>
+      <class name="testrunners.MyTestRunner"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
